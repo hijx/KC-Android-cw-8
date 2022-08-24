@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="#EAF1F8"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <TextView
+            android:id="@+id/studentNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="72dp"
+            android:text="name"
+            android:textColor="#0B57D0"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/studentImage"
+            app:layout_constraintHorizontal_bias="0.268"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/studentAgeTxt"
+            android:layout_width="76dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="24dp"
+            android:text="studentAge"
+            android:textColor="#535353"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/studentGradeTxt"
+            app:layout_constraintStart_toStartOf="@id/studentNameTxt"
+            app:layout_constraintTop_toBottomOf="@id/studentNameTxt" />
+
+        <TextView
+            android:id="@+id/studentGradeTxt"
+            android:layout_width="73dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="24dp"
+            android:text="studentGrade"
+            android:textColor="#535353"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/studentAgeTxt"
+            app:layout_constraintTop_toBottomOf="@id/studentNameTxt" />
+
+        <ImageView
+            android:id="@+id/studentImage"
+            android:layout_width="117dp"
+            android:layout_height="151dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_restore_from_trash_24"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="160dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
